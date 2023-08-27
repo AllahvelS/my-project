@@ -1,3 +1,4 @@
+/* Global styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,165 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.hero {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.notepad-image {
+  display: flex;
+  align-items: center;
+}
+
+.notepad-icon {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+}
+
+
+/* Navbar styles */
+.navbar-container {
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit; 
+  padding: 1rem;
+  color: white; 
+}
+
+.navbar-icon {
+  width: 50px;
+  height: 50px; 
+}
+
+.navbar-link a { 
+  text-decoration: none;
+  color: rgb(255, 26, 26); 
+  transition: color 0.3s ease;
+}
+
+.navbar-link a:hover {
+  color: #f39c12; 
+}
+
+/* Note component styles */
+.note {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.note h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.note p {
+  margin-bottom: 0.5rem;
+}
+
+.note a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.note a:hover {
+  color: #0056b3;
+}
+
+/* NoteDetails and NoteEditForm styles */
+.Edit {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Edit label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.Edit input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.Edit input[type="submit"] {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Edit input[type="submit"]:hover {
+  background-color: #e67e22;
+}
+
+.Edit button {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.Edit button:hover {
+  background-color: #999;
+}
+
+.handwritten-heading {
+  font-size: 48px;
+  font-family: 'Cursive', cursive;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
